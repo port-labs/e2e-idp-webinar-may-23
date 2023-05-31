@@ -151,7 +151,7 @@ After extending the data model we deploy an updated config to Port's K8s exporte
 ```bash
 helm upgrade --install port-k8s-exporter port-labs/port-k8s-exporter \
 --create-namespace --namespace port-k8s-exporter \
---set secret.secrets.portClientId=VlijZd1JjhHvdNJxYxU6r4Nyr07uHpPq --set secret.secrets.portClientSecret=316qFfQEeP4614G08j90uqoHHvjUZtVH4TM5BupfdtSNYNjed7iyF4KnLmppCjnb \
+--set secret.secrets.portClientId=PORT_CLIENT_ID --set secret.secrets.portClientSecret=PORT_CLIENT_SECRET \
 --set-file configMap.config=./config/test/exporter-config-test.yml
 ```
 
@@ -160,6 +160,6 @@ helm upgrade --install port-k8s-exporter port-labs/port-k8s-exporter \
 ```bash
 helm upgrade --install port-k8s-exporter port-labs/port-k8s-exporter \
 --create-namespace --namespace port-k8s-exporter \
---set secret.secrets.portClientId=VlijZd1JjhHvdNJxYxU6r4Nyr07uHpPq --set secret.secrets.portClientSecret=316qFfQEeP4614G08j90uqoHHvjUZtVH4TM5BupfdtSNYNjed7iyF4KnLmppCjnb \
+--set secret.secrets.portClientId=PORT_CLIENT_ID --set secret.secrets.portClientSecret=PORT_CLIENT_SECRET \
 --set-file configMap.config=./config/test/exporter-config-prod.yml
 ```
