@@ -1,0 +1,42 @@
+{
+  "identifier": "deployToProd",
+  "title": "Promote to prod",
+  "icon": "DeployedAt",
+  "userInputs": {
+    "properties": {
+      "cluster": {
+        "type": "string",
+        "format": "entity",
+        "blueprint": "cluster",
+        "title": "Cluster",
+        "dataset": {
+          "combinator": "and",
+          "rules": [
+            {
+              "operator": "contains",
+              "property": "$identifier",
+              "value": "prod"
+            }
+          ]
+        }
+      }
+    },
+    "required": []
+  },
+  "invocationMethod": {
+    "type": "GITHUB",
+    "org": "port-live-webinar",
+    "repo": "notifications-service",
+    "workflow": "deploy-to-prod.yml",
+    "omitPayload": false,
+    "omitUserInputs": true
+  },
+  "trigger": "DAY-2",
+  "description": "Deploy this microservice to the prod environment",
+  "requiredApproval": true,
+  "approvalNotification": {
+    "format": "slack",
+    "type": "webhook",
+    "url": "https://hooks.slack.com/services/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"
+  }
+}

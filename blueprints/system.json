@@ -1,0 +1,36 @@
+{
+  "identifier": "system",
+  "title": "System",
+  "icon": "Service",
+  "schema": {
+    "properties": {
+      "description": {
+        "title": "Description",
+        "type": "string"
+      },
+      "slack_channel": {
+        "title": "Slack Channel",
+        "icon": "Slack",
+        "type": "string",
+        "format": "url"
+      },
+      "confluence_url": {
+        "title": "Confluence URL",
+        "type": "string",
+        "icon": "Confluence",
+        "format": "url"
+      }
+    },
+    "required": []
+  },
+  "mirrorProperties": {},
+  "calculationProperties": {},
+  "relations": {
+    "domain": {
+      "title": "Domain",
+      "target": "domain",
+      "required": false,
+      "many": false
+    }
+  }
+}
