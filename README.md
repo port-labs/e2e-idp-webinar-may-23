@@ -21,6 +21,10 @@ You can view the webinar here.
     - [Deploying the K8s exporter and the config](#deploying-the-k8s-exporter-and-the-config)
       - [Initial deployment](#initial-deployment)
       - [Updated deployment](#updated-deployment)
+  - [Scorecards](#scorecards)
+  - [Visualizations](#visualizations)
+    - [Microservice cycle time chart](#microservice-cycle-time-chart)
+    - [Domain tech radar chart](#domain-tech-radar-chart)
 
 ## Initial Setup
 
@@ -163,3 +167,23 @@ helm upgrade --install port-k8s-exporter port-labs/port-k8s-exporter \
 --set secret.secrets.portClientId=PORT_CLIENT_ID --set secret.secrets.portClientSecret=PORT_CLIENT_SECRET \
 --set-file configMap.config=./config/test/exporter-config-prod.yml
 ```
+
+## Scorecards
+
+During the webinar we create a single scorecard on the microservice blueprint, you can find it's definition in [microservice-ownership.json](./scorecards/microservice-ownership.json)
+
+## Visualizations
+
+During the webinar we add some visualizations to the microservice and to the domain blueprint, here are the definitions for these visualizations:
+
+### Microservice cycle time chart
+
+Here is the definition for the cycle time chart (to configure the chart open the page of a specific microservice entity and click on "Add Visualization"):
+
+![Cycle time chart definition](visualizations/cycle-time-chart.png)
+
+### Domain tech radar chart
+
+Here is the definition for the tech radar chart (to configure the chart open the page of a specific domain entity and click on "Add Visualization"):
+
+![Tech radar chart definition](visualizations/tech-radar-chart.png)

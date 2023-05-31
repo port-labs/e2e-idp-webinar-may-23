@@ -1,0 +1,59 @@
+{
+  "identifier": "Ownership",
+  "title": "Ownership",
+  "rules": [
+    {
+      "identifier": "hasReadme",
+      "title": "Has README",
+      "level": "Bronze",
+      "query": {
+        "combinator": "and",
+        "conditions": [
+          {
+            "operator": "isNotEmpty",
+            "property": "readme"
+          }
+        ]
+      }
+    },
+    {
+      "identifier": "hasTeam",
+      "title": "Has Owning Team",
+      "level": "Gold",
+      "query": {
+        "combinator": "and",
+        "conditions": [
+          {
+            "operator": "isNotEmpty",
+            "property": "$team"
+          }
+        ]
+      }
+    },
+    {
+      "identifier": "languageSupported",
+      "title": "Language Supported In the Organization",
+      "level": "Silver",
+      "query": {
+        "combinator": "or",
+        "conditions": [
+          {
+            "operator": "=",
+            "property": "language",
+            "value": "GO"
+          },
+          {
+            "operator": "=",
+            "property": "language",
+            "value": "Node"
+          },
+          {
+            "operator": "=",
+            "property": "language",
+            "value": "Python"
+          }
+        ]
+      }
+    }
+  ]
+}
