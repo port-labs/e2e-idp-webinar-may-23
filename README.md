@@ -4,6 +4,24 @@ This repository contains the different resources used during Port's live webinar
 
 You can view the webinar here.
 
+# Table of contents
+
+- [Building A Fully Operational Internal Developer Platform](#building-a-fully-operational-internal-developer-platform)
+- [Table of contents](#table-of-contents)
+  - [Initial Setup](#initial-setup)
+  - [Blueprints](#blueprints)
+    - [Definitions](#definitions)
+  - [Entities](#entities)
+    - [Definitions](#definitions-1)
+  - [Self-service actions](#self-service-actions)
+    - [Definitions](#definitions-2)
+    - [Trigger payloads](#trigger-payloads)
+  - [GitHub workflows](#github-workflows)
+  - [K8s exporter config](#k8s-exporter-config)
+    - [Deploying the K8s exporter and the config](#deploying-the-k8s-exporter-and-the-config)
+      - [Initial deployment](#initial-deployment)
+      - [Updated deployment](#updated-deployment)
+
 ## Initial Setup
 
 The webinar does start with an environment that has some initial setup:
