@@ -37,6 +37,6 @@
   "approvalNotification": {
     "format": "slack",
     "type": "webhook",
-    "url": "https://hooks.slack.com/services/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"
+    "url": "https://hooks.slack.com/services/YOUR_SLACK_WEBHOOK_URL"
   }
 }
