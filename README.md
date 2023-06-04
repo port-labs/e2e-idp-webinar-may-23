@@ -2,7 +2,7 @@
 
 This repository contains the different resources used during Port's live webinar from 30.05.2023 - Building a fully operational internal developer platform.
 
-You can view the webinar here.
+You can view the webinar [here](https://www.youtube.com/watch?v=_i4vMfznw7Y).
 
 # Table of contents
 
