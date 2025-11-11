@@ -1,0 +1,11 @@
+{
+  "identifier": "subscription",
+  "title": "Subscription",
+  "icon": "Home",
+  "team": [],
+  "properties": {
+    "description": "The subscription domain is responsible for managing the process of enrolling and maintaining customers in a subscription service. This may include tasks such as handling subscription sign-ups, renewals, cancellations, and billing.",
+    "architecture_diagram": "https://viewer.diagrams.net/?tags=%7B%7D&highlight=0000ff&edit=_blank&layers=1&nav=1&title=Subscription.drawio#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1zwl_YQcfdTa9usdghxoYIN0N3b3upCe8%26export%3Ddownload"
+  },
+  "relations": {}
+}

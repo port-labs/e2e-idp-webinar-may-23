@@ -1,0 +1,50 @@
+{
+  "identifier": "microservice",
+  "title": "Microservice",
+  "icon": "Microservice",
+  "schema": {
+    "properties": {
+      "description": {
+        "title": "Description",
+        "type": "string"
+      },
+      "url": {
+        "title": "URL",
+        "format": "url",
+        "type": "string"
+      },
+      "readme": {
+        "title": "README",
+        "type": "string",
+        "format": "markdown",
+        "icon": "Book"
+      },
+      "language": {
+        "type": "string",
+        "title": "Language"
+      },
+      "type": {
+        "title": "Type",
+        "description": "The type of microservice",
+        "type": "string",
+        "enum": ["Service", "Library", "Website"],
+        "enumColors": {
+          "Service": "blue",
+          "Library": "green",
+          "Website": "pink"
+        }
+      }
+    },
+    "required": []
+  },
+  "mirrorProperties": {},
+  "calculationProperties": {},
+  "relations": {
+    "system": {
+      "title": "System",
+      "target": "system",
+      "required": false,
+      "many": false
+    }
+  }
+}

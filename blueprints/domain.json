@@ -1,0 +1,23 @@
+{
+  "identifier": "domain",
+  "title": "Domain",
+  "icon": "Home",
+  "schema": {
+    "properties": {
+      "description": {
+        "title": "Description",
+        "type": "string"
+      },
+      "architecture_diagram": {
+        "title": "Architecture Diagram",
+        "type": "string",
+        "format": "url",
+        "spec": "embedded-url"
+      }
+    },
+    "required": []
+  },
+  "mirrorProperties": {},
+  "calculationProperties": {},
+  "relations": {}
+}

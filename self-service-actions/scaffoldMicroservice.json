@@ -1,0 +1,50 @@
+{
+  "identifier": "scaffoldMicroservice",
+  "title": "Scaffold new microservice",
+  "icon": "GithubActions",
+  "userInputs": {
+    "properties": {
+      "name": {
+        "type": "string",
+        "title": "Name"
+      },
+      "language": {
+        "type": "string",
+        "title": "Language",
+        "enum": ["Python", "Node"]
+      },
+      "version": {
+        "type": "string",
+        "title": "Version",
+        "dependsOn": ["language"],
+        "enum": {
+          "jqQuery": "if .form.language == \"Node\" then [\"Node 16\", \"Node 18\"] else [\"Python 3.9\", \"Python 3.10\"] end"
+        }
+      },
+      "template": {
+        "type": "string",
+        "format": "url",
+        "dependsOn": ["version"],
+        "enum": {
+          "jqQuery": "if .form.version | startswith(\"Node\") then [\"https://github.com/ohduran/cookiecutter-react-django\"] else [\"https://github.com/cookiecutter/cookiecutter-django\"] end"
+        }
+      },
+      "options": {
+        "type": "object",
+        "title": "Template Options"
+      }
+    },
+    "required": []
+  },
+  "invocationMethod": {
+    "type": "GITHUB",
+    "omitPayload": false,
+    "omitUserInputs": true,
+    "org": "port-live-webinar",
+    "repo": "scaffolder",
+    "workflow": "scaffold-cookiecutter.yml"
+  },
+  "trigger": "CREATE",
+  "description": "This action will scaffold a new repository for a new microservice",
+  "requiredApproval": false
+}

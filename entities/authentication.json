@@ -1,0 +1,14 @@
+{
+  "identifier": "authentication",
+  "title": "Authentication",
+  "icon": "Service",
+  "team": [],
+  "properties": {
+    "description": "The authentication system",
+    "slack_channel": "https://slack.com",
+    "confluence_url": "http://confluence.atlassian.net"
+  },
+  "relations": {
+    "domain": "subscription"
+  }
+}

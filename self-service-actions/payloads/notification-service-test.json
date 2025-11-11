@@ -1,0 +1,4 @@
+{
+  "$targetEntity": "notifications-service",
+  "cluster": "test"
+}
